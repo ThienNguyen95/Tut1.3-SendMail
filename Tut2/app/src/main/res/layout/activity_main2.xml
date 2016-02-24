@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="25dp"
+    tools:context="com.example.thien.tut2.Main2Activity">
+
+    <LinearLayout
+        android:id="@+id/LL2_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Your salary:" />
+
+        <TextView
+            android:id="@+id/TV2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="\t0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="\tdollars" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/SB2_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL2_1" />
+
+    <RelativeLayout
+        android:id="@+id/RL2_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SB2_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="$0:" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="$100000" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TV2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RL2_1"
+        android:layout_marginTop="30dp"
+        android:text="Which sports do you like?" />
+
+    <LinearLayout
+        android:id="@+id/LL2_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV2_1"
+        android:layout_marginTop="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/CB2_1"
+                    android:layout_weight="1"
+                    android:text="Football" />
+
+                <CheckBox
+                    android:id="@+id/CB2_2"
+                    android:layout_weight="1"
+                    android:text="Tennis" />
+
+                <CheckBox
+                    android:id="@+id/CB2_3"
+                    android:layout_weight="1"
+                    android:text="Ping pong" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp">
+
+                <CheckBox
+                    android:id="@+id/CB2_4"
+                    android:layout_weight="1"
+                    android:text="Swimming" />
+
+                <CheckBox
+                    android:id="@+id/CB2_5"
+                    android:layout_weight="1"
+                    android:text="Volleyball" />
+
+                <CheckBox
+                    android:id="@+id/CB2_6"
+                    android:layout_weight="1"
+                    android:text="Basketball" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BT2_1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/LL2_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="#f901af"
+        android:gravity="center"
+        android:text="DONE"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+</RelativeLayout>
